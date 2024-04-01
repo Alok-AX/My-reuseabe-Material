@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lorem </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="lorem ipsum simply dummy text">
+    <meta name="keywords" content="Lorem ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-----Fonts Starts Here----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-----Fonts Ends Here----->
+
+    <!-----CSS Starts Here----->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-----CSS Ends Here----->
+
+    <!-----Favicon Starts Here----->
+    <link rel="icon" href="images/fav-icon.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-----Favicon Ends Here----->
+
+    <style>
+        
+        /* -----------------------------------------------------------------------------------
+
+        Template Name: Lorem Landing Page
+        Template URI: 
+        Description: This is html5 template
+        Author: Alok
+        Author URI: Lorem
+        Version: 3.0
+        -----------------------------------------------------------------------------------*/ */
+
+        /* -----------------------------------------------------------------------------------
+        CSS INDEX
+        ===================
+
+        1.Global CSS
+        2.Header CSS
+        14.Responsive CSS
+        ----------------------------------------------------------------------------------- */
+
+
+        /*Global CSS Starts Here*/
+
+
+        *,
+        *::before,
+        *::after{
+            box-sizing: border-box
+        }
+        :root {
+            --orange:#F9913D!important;
+            --white:#FFFFFF;
+            --dark:#11282D;
+            --light-text:#545A60;
+        }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 100;
+            line-height: 1;
+        }
+        /*Global CSS Starts Here*/
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Garet';
+            line-height: 1.4;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 34px;
+        }
+
+        h3 {
+            font-size: 41px;
+        }
+
+        h4 {
+            font-size: 32px;
+        }
+
+        h5 {
+            font-size: 28px;
+        }
+
+        h6 {
+            font-size: 22px;
+        }
+
+        span {
+            font-weight: 100;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 0px;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.2;
+        }
+
+        p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 26px;
+            font-weight: 300;
+            color: var(--light-text);
+        }
+
+        a {
+            font-size: 16px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 300;
+            line-height: 1.2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        img {
+            margin-bottom: 0px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        ul li {
+            list-style: none;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+
+        ul {
+            padding-left: 0px;
+        }
+
+        input,
+        button,
+        select,
+        optgroup,
+        textarea{
+            margin: 0;
+            font-family: 'DM Sans', sans-serif;
+            font-size: inherit;
+            line-height: inherit
+        }
+
+        .ml-auto {
+            margin-left: auto;
+        }
+        .mr-auto {
+            margin-right: auto;
+        }
+        /*Global CSS Ends Here*/
+
+        /*Header CSS Starts Here*/
+
+        header {
+            position: fixed;
+            right: 0px;
+            left: 0px;
+            top: 0px;
+            z-index: 9999;
+            transition-duration: 0.5s;
+            padding-top: 30px;
+        }
+        .stickyHeader .navbar{
+            height: auto;
+            transition: all 0.3s ease 0s;
+
+        }
+        .navbar-brand{
+            padding: 10px 0px;
+        }
+        .navbar-brand img {
+            transition: all .5s;
+            max-width: 175px;
+        }
+
+        .navbar-nav {
+            align-items: center;
+        }
+
+        .navbar-nav li {
+            padding: 15px 20px;
+        }
+        .navbar-nav li:last-child{
+            padding-right: 0 !important;
+        }
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding: 0px 0px;
+            color: var(--light-text);
+            transition-duration: 0.5s;
+            font-size: 18px;
+            font-weight: 400;
+
+        }
+        .nav-inside-li .dropdown-item{
+            padding: 10px !important;
+        }
+        .nav-inside-li .dropdown-item:hover{
+            background: var(--orange);
+            color: var(--white);
+        }
+        .dropdown-menu.show{
+            padding: 0 !important;
+            border-radius: 0px;
+        }
+        .navbar-expand-lg .navbar-nav .nav-link i{
+            font-size: 12px;
+            position: relative;
+            top: -2px;
+        }
+        .dropdown-toggle::after{
+        display: none;
+        }
+        .navbar-light .navbar-nav .active>.nav-link,
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .nav-link.show,
+        .navbar-light .navbar-nav .show>.nav-link {
+            color: var(--orange);
+            transition-duration: 0.5s;
+        }
+        .nav-inside-li{
+            padding: 0 !important;
+        }
+
+        .navbar-light .navbar-nav .nav-link:focus,
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: var(--orange);
+            transition-duration: 0.5s;
+        }
+
+        .navbar {
+            box-shadow: none;
+            transition: all 0.3s ease 0s;
+            padding: 0px;
+        }
+        .ml-auto{
+            margin-left: auto;
+        }
+        .nav-item.menu-last-link{ 
+            padding-right: 0 !important;
+        }
+        .stickyHeader {
+            transition-duration: 0.5s;
+            box-shadow: rgb(214, 214, 214) 0px 1px 11px -1px;
+            background: rgb(255, 255, 255) !important;
+            padding: 0px !important;
+        }
+        .stickyHeader .navbar-expand-lg .navbar-nav .nav-link {
+            color: var(--dark) !important;
+            transition-duration: 0.5s;
+        }
+
+        .slick-dots li.slick-active button:before {
+            content: none;
+        }
+
+        .stickyHeader .navbar {
+            border: none !important;
+        }
+
+        .stickyHeader .navbar-light .navbar-nav .active>.nav-link,
+        .stickyHeader .navbar-light .navbar-nav .nav-link.active,
+        .stickyHeader .navbar-light .navbar-nav .nav-link.show,
+        .stickyHeader .navbar-light .navbar-nav .show>.nav-link {
+            color: var(--orange);
+            border: none;
+        }
+
+        .stickyHeader .navbar-light .navbar-nav .nav-link:focus,
+        .stickyHeader .navbar-light .navbar-nav .nav-link:hover {
+            color: var(--orange);
+            border: none;
+        }
+
+        .stickyHeader .navbar-brand img {
+            max-width: 140px;
+            transition: all .5s;
+        }
+
+        .stickyHeader .navbar-light .navbar-toggler {
+            outline: 0px !important;
+        }
+
+        .nav-link.contactBtn {
+            background: var(--primary);
+            color: #fff !important;
+            padding: 8px 30px !important;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            cursor: pointer;
+            border: 1px solid transparent;
+            display: inline-block;
+        }
+        .nav-link.contactBtn:hover svg path{
+            fill: var(--primary);
+        }
+        .navbar-light .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        .stickyHeader .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+
+        }
+        .stickyHeader  .navbar-nav {
+            margin-left: auto;
+        }
+
+        /*Header CSS Ends Here*/
+
+        /*Banner CSS Starts Here*/
+        .banner-section{
+            padding: 80px 0px;
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+
+        }
+      
+     
+        /*Banner CSS Ends Here*/
+
+        
+        /*Responsive CSS Starts Here*/
+        @media(max-width:1920px) {}
+        @media(max-width:1660px) {}
+        @media(max-width:1440px) {}
+        @media(max-width:1360px) {
+            .testimonial-wrapper{margin-left: calc(50% - 590px);}
+        }
+        @media(max-width:1199px) {}
+        @media(max-width:991px) {}
+        @media(max-width:767px) {}
+        @media(max-width:575px) {}
+        @media(max-width:425px) {}
+        @media(max-width:375px) {}
+        @media(max-width:320px) {}
+
+        /*Responsive CSS Ends Here*/
+    </style>
+</head>
+
+<body>
+    <!------------Header Starts Here------------->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href=""><img alt="" class="logo" src="images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Solutions <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-inside-li"><a class="dropdown-item" href="#">Solutions</a></li>
+                                <li class="nav-inside-li"><a class="dropdown-item" href="#">Solutions</a></li>
+                                <li class="nav-inside-li"><a class="dropdown-item" href="#">Solutions</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Knowledge Center <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-inside-li"><a class="dropdown-item" href="#">Knowledge Center</a></li>
+                                <li class="nav-inside-li"><a class="dropdown-item" href="#">Knowledge Center</a></li>
+                                <li class="nav-inside-li"><a class="dropdown-item" href="#">Knowledge Center</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-inside-li"><a class="dropdown-item" href="#">About Us</a></li>
+                                <li class="nav-inside-li"><a class="dropdown-item" href="#">About Us</a></li>
+                                <li class="nav-inside-li"><a class="dropdown-item" href="#">About Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!------------Header Ends Here------------->
+    <!------------Banner Section Starts Here------------->
+    <section class="banner-section home-banner-section" id="section1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="banner-left-section ">
+                        <h1> <span>Fuss-free</span> digital  advertising</h1>  
+                        <p>Your time is yours again with our powerful demand-side advertising solutions. Built for agencies and brands.</p>                     
+                        <div class="hero-form">
+                            <input type="text" placeholder="Enter your email id here">
+                            <button>Get Started</button>
+                        </div>                                                   
+                    </div>
+                </div>    
+                       
+            </div>
+        </div>
+        <div class="banner-img-right">
+            <img src="images/hero.png" alt="">
+        </div>     
+    </section>
+    <!------------Banner Section Ends Here------------->
+
+        <!-----Script Starts Here----->
+        <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <script>
+                    
+        //Sticky header script
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 50) {
+                $("header").addClass("stickyHeader");
+            } else {
+                $("header").removeClass("stickyHeader");
+            }
+        });
+
+        //changing logo url in sticky
+        var initialSrc = "images/logo.png";
+        var scrollSrc = "images/logo.png";
+
+        $(window).scroll(function() {
+            var value = $(this).scrollTop();
+            if (value > 50)
+                $(".logo").attr("src", scrollSrc);
+            else
+                $(".logo").attr("src", initialSrc);
+        });
+
+        // connected-tv-slider-wrapper-slider
+        $(document).ready(function() {
+            $('.connected-tv-slider-wrapper').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                arrows:false,
+                dots:false,
+                centerPadding: '100px',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [{
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1  
+                        },
+                    },
+                    {
+                        breakpoint: 577,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            centerPadding: '0px'
+                        },
+                    },
+                
+                ]
+            });
+        });
+        // check box js
+        $(document).ready(function() {
+        function check() {
+            var checkBox = $("#checkbox");
+            var text1 = $(".text1");
+            var text2 = $(".text2");
+            text1.each(function(i) {
+            if (checkBox.prop("checked")) {
+                $(this).css("display", "block");
+                text2.eq(i).css("display", "none");
+            } else {
+                $(this).css("display", "none");
+                text2.eq(i).css("display", "block");
+            }
+            });
+        }
+        check();
+        $("#checkbox").on("click", check);
+        });
+        // check box js
+
+        //scrolling nav
+        $(document).ready(function() {
+            // Add scrollspy to <body>
+            $('body').scrollspy({ target: ".navbar", offset: 50 });
+
+            // Add smooth scrolling on all links inside the navbar
+            $("#navbarText a, .quick-links-layout a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.replace = hash;
+                    });
+                } // End if
+            });
+        });
+
+        // Initiate animation the wowjs
+        new WOW().init();
+
+
+
+        // counter js start here
+        function inVisible(element) {
+            //Checking if the element is
+            //visible in the viewport
+            var WindowTop = $(window).scrollTop();
+            var WindowBottom = WindowTop + $(window).height();
+            var ElementTop = element.offset().top;
+            var ElementBottom = ElementTop + element.height();
+            //animating the element if it is
+            //visible in the viewport
+            if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
+                animate(element);
+        }
+
+        function animate(element) {
+            //Animating the element if not animated before
+            if (!element.hasClass('ms-animated')) {
+                var maxval = element.data('max');
+                var html = element.html();
+                element.addClass("ms-animated");
+                $({
+                    countNum: element.html()
+                }).animate({
+                    countNum: maxval
+                }, {
+                    //duration 5 seconds
+                    duration: 3000,
+                    easing: 'linear',
+                    step: function() {
+                        element.html(Math.floor(this.countNum) + html);
+                    },
+                    complete: function() {
+                        element.html(this.countNum + html);
+                    }
+                });
+            }
+
+        }
+
+            //When the document is ready
+            $(function() {
+                $(window).scroll(function() {
+                    $("h2[data-max]").each(function() {
+                        inVisible($(this));
+                    });
+                })
+            });
+
+    // counter js end here
+
+        // Location js Start here
+        $(document).ready(function() {
+            $(".location-col-wrap").click(function() {
+                var id = $(this).attr("id");
+
+                // Hide all location-right-col elements
+                $(".location-right-col").removeClass("active");
+
+                // Show the clicked location-right-col element
+                $("#" + id.replace("-tab", "-content")).addClass("active");
+
+                // Remove active class from all location-col-wrap elements
+                $(".location-col-wrap").removeClass("active");
+
+                // Add active class to the clicked location-col-wrap element
+                $(this).addClass("active");
+            });
+        });
+        // Location js end here
+
+        </script>
+        <!-----Script Ends Here----->
+    
+    </body>
+    
+    </html>
