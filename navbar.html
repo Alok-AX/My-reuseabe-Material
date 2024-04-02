@@ -10,6 +10,20 @@
       margin: 0;
       font-family: Arial, sans-serif;
     }
+/*     header {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    transition-duration: 0.5s;
+}
+    .stickyHeader {
+    background: var(--primary);
+    padding: 0px !important;
+    box-shadow: 0px 1px 11px -1px var(--primary);
+    transition-duration: 0.5s;
+} */
 
     .navbar {
       overflow: hidden;
@@ -131,6 +145,19 @@
     }
 
   </script>
+
+<!--   <script>
+    window.addEventListener("scroll", function() {
+    var scroll = window.scrollY;
+    var header = document.querySelector("header");
+    if (scroll >= 50) {
+        header.classList.add("stickyHeader");
+    } else {
+        header.classList.remove("stickyHeader");
+    }
+});
+
+  </script> -->
 
 </body>
 
